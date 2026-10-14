@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nás | Marcus Barbershop</title>
+    <style>
+        :root {
+            --primary: #c5a059;
+            --dark: #121212;
+            --light: #f4f4f4;
+            --accent: #d4af37;
+            --gray: #1f1f1f;
+            --text-muted: #aaaaaa;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--dark); color: var(--light); line-height: 1.6; }
+        header { background: rgba(18, 18, 18, 0.95); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid rgba(197, 160, 89, 0.2); }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 20px; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); text-transform: uppercase; letter-spacing: 2px; }
+        .nav-links { display: flex; list-style: none; gap: 30px; }
+        .nav-links a { color: var(--light); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+        .section { padding: 140px 20px 100px 20px; max-width: 1000px; margin: 0 auto; }
+        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 50px; text-transform: uppercase; letter-spacing: 2px; color: var(--primary); }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .about-text p { margin-bottom: 20px; color: var(--text-muted); font-size: 1.1rem; }
+        .about-img { width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        @media (max-width: 768px) { .about-grid { grid-template-columns: 1fr; } .nav-links { display: none; } }
+        footer { background: #0a0a0a; padding: 40px 20px; text-align: center; border-top: 1px solid rgba(197, 160, 89, 0.2); color: var(--text-muted); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">Marcus Barbershop</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="about.html" class="active">O nás</a></li>
+                <li><a href="services.html">Služby</a></li>
+                <li><a href="contacts.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2 class="section-title">O Marcus Barbershop</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>Marcus Barbershop v Praze 6 (Dejvice) je místem, kde se poctivé holičské řemeslo potkává s moderním stylem.</p>
+                <p>Sledujeme tradiční postupy, holení břitvou s horkým ručníkem (hot towel), úpravy vousů a špičkové pánské střihy. Naším cílem je poskytnout každému zákazníkovi nejen perfektní vzhled, ale také chvíli relaxace a pohody v příjemném prostředí.</p>
+                <p>Navštivte nás na adrese Národní obrany 715/16 a svěřte se do rukou našich zkušených barberů.</p>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80" alt="Interiér barbershopu" class="about-img">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Marcus Barbershop, Praha 6. Všechna práva vyhrazena.</p>
+    </footer>
+</body>
+</html>
