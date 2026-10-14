@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Služby a Ceník | Marcus Barbershop</title>
+    <style>
+        :root {
+            --primary: #c5a059;
+            --dark: #121212;
+            --light: #f4f4f4;
+            --accent: #d4af37;
+            --gray: #1f1f1f;
+            --text-muted: #aaaaaa;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--dark); color: var(--light); line-height: 1.6; }
+        header { background: rgba(18, 18, 18, 0.95); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid rgba(197, 160, 89, 0.2); }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 20px; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); text-transform: uppercase; letter-spacing: 2px; }
+        .nav-links { display: flex; list-style: none; gap: 30px; }
+        .nav-links a { color: var(--light); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+        .section { padding: 140px 20px 100px 20px; max-width: 900px; margin: 0 auto; }
+        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 50px; text-transform: uppercase; letter-spacing: 2px; color: var(--primary); }
+        .service-list { display: flex; flex-direction: column; gap: 20px; }
+        .service-item { background: var(--gray); padding: 25px 30px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; border-left: 4px solid var(--primary); }
+        .service-info h3 { font-size: 1.3rem; margin-bottom: 5px; }
+        .service-info p { color: var(--text-muted); font-size: 0.95rem; }
+        .service-price { font-size: 1.4rem; font-weight: bold; color: var(--primary); white-space: nowrap; }
+        @media (max-width: 768px) { .service-item { flex-direction: column; align-items: flex-start; gap: 15px; } .nav-links { display: none; } }
+        footer { background: #0a0a0a; padding: 40px 20px; text-align: center; border-top: 1px solid rgba(197, 160, 89, 0.2); color: var(--text-muted); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">Marcus Barbershop</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="about.html">O nás</a></li>
+                <li><a href="services.html" class="active">Služby</a></li>
+                <li><a href="contacts.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2 class="section-title">Naše služby & Ceník</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Klasický střih</h3>
+                    <p>Střih podle přání (nůžkami i strojkem) se závěrečným stylingem. Bez mytí (500 Kč) / s mytím.</p>
+                </div>
+                <div class="service-price">500 / 550 Kč</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Střih Barber Shop Experience</h3>
+                    <p>Střih nůžkami i strojkem, vypalování chloupků na uších, zaholení krku břitvou, mytí, masáž hlavy s tonikem a styling.</p>
+                </div>
+                <div class="service-price">650 Kč</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Střih + Holení</h3>
+                    <p>Střih s mytím a stylingem, holení hot towel nebo úprava vousů s péčí, vypalování chloupků a masáž hlavy.</p>
+                </div>
+                <div class="service-price">1 000 Kč</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Holení / Úprava vousů</h3>
+                    <p>Holení břitvou technikou „hot towel“ nebo úprava vousů se zaholením a péčí o vousy (olejíček/balzám).</p>
+                </div>
+                <div class="service-price">480 Kč</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Úprava vousů pouze strojkem</h3>
+                    <p>Vousy podle přání (např. 3, 6, 10 mm) nebo zastřižení bez použití břitvy.</p>
+                </div>
+                <div class="service-price">350 Kč</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Střih pouze strojkem</h3>
+                    <p>Střih strojkem s mytím, masáží hlavy s tonikem a upalováním chloupků na uších.</p>
+                </div>
+                <div class="service-price">450 / 500 Kč</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Dětský střih</h3>
+                    <p>Pro kluky do 14/15 let, včetně mytí a stylingu v pohodovém tempu.</p>
+                </div>
+                <div class="service-price">450 Kč</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Střih Otec + Syn</h3>
+                    <p>Kombinovaný střih s mytím a stylingem pro oba (věkový limit syna do 14 let).</p>
+                </div>
+                <div class="service-price">900 Kč</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Ultimátní péče</h3>
+                    <p>Kompletní střih + holení s horkým ručníkem, péče o pleť s italskou kosmetikou a parafínový zábal rukou.</p>
+                </div>
+                <div class="service-price">1 400 – 1 500 Kč</div>
+            </div>
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Péče o pleť / Parafínový zábal</h3>
+                    <p>Doplňkové služby: péče o pleť prémiovou italskou kosmetikou nebo prohřívací parafínový zábal rukou.</p>
+                </div>
+                <div class="service-price">150 – 250 Kč</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Marcus Barbershop, Praha 6. Všechna práva vyhrazena.</p>
+    </footer>
+</body>
+</html>
